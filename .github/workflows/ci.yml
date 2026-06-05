@@ -3,7 +3,7 @@ name: CI
 on: [push]
 jobs:
     build-test:
-        runs-on: ubuntu-24.04
+        runs-on: ubuntu-20.04
         steps:
 
             - name: Checkout
@@ -24,4 +24,3 @@ jobs:
                     cypress/videos
                     cypress/results
                 if-no-files-found: ignore
-
